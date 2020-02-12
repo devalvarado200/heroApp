@@ -23,8 +23,8 @@
     </ul>
 
 
-    <form #form="ngForm">
-      <input #searchTerm type="text" (keyup.enter)="searchHeroes(searchTerm.value)" />
+    <form class="form-inline my-2 my-lg-0" #form="ngForm">
+      <input class="form-control mr-sm-2" placeholder="Buscar Héroe" #searchTerm type="text" (keyup.enter)="searchHeroes(searchTerm.value)" />
       <button (click)="searchHeroes(searchTerm.value)"
           class="btn btn-outline-primary my-2 my-sm-0" type="button">Buscar</button>
     </form>
